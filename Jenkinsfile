@@ -13,8 +13,6 @@ pipeline {
         }
         stage('TEST') {
             steps {
-                bat 'cd android'
-                bat 'cd testng-examples'
                 bat 'mvn test -Dtest="FirstTest"'
                 echo 'TESTED'
             }
